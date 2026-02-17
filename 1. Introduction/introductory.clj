@@ -13,25 +13,25 @@
 ; This is a comment
 
 (defn gibibytes->bytes
-  "Returns ... "
+  "Returns the conversion from gibibytes to bytes"
   [gibibyte]
   (* gibibyte 1024 1024 1024))
 (gibibytes->bytes 5)
 
 (defn fahrenheit->celsius
-  "Returns ... "
+  "Returns the conversion from farenheit to celsius "
   [Farenheit]
   (/ (* 5.0 (- Farenheit 32.0)) 9.0 ))
 
 (defn sign
-  "Returns ... "
+  "Returns 1 if the number is possitive, -1 if is neghative and 0 if is 0"
   [n]
   (if (< n 0) -1
   (if (> n 0) 1 0)))
 
 
 (defn roots
-  "Return ..."
+  "Return return the roots of a ecuation"
   [a b c]
   (let [d (- b)
         e (sqrt (- (* b b) (* 4 a c)))
@@ -43,7 +43,7 @@ x2 (/ (- d e) f)]
 
 
 (defn bmi
-  "Returns ... "
+  "Returns the bmi eith the height and the weight of someone "
   [weight height]
   (let [bmi (/ weight (* height height))]
     (cond
@@ -54,7 +54,7 @@ x2 (/ (- d e) f)]
       :else 'obese3)))
 
 (defn type-of-triangle
-  "Returns ... "
+  "Returns the type of triangle with the size of th sides "
   [a b c]
   (cond
     (and (= a b) (= b c)) 'equilateral
