@@ -1,7 +1,9 @@
 {:paths [
 "1. Introduction"
 "2. Repetitions"
-"3. Higher-Order Functions"]
+"3. Higher-Order Functions"
+"4. Parallelism"
+"5. Automata"]
  :deps {org.clojure/clojure            {:mvn/version "1.12.4"}
         org.clojure/algo.generic       {:mvn/version "1.0.1"}
         org.clojure/core.logic         {:mvn/version "1.1.1"}

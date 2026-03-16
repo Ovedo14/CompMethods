@@ -3,6 +3,8 @@
 
 ; Problem 1
 (defn expand
+  "Expands a sequence by repeating each element n times,
+   where n is its 1-indexed position in the sequence."
   [s]
   (mapcat repeat
           (range 1 (inc (count s)))
@@ -31,6 +33,7 @@
 
 ; Sequence API solution
 (defn insert
+  "Inserts a number n into a sorted sequence s, maintaining sorted order."
   [n s]
   (let [split-result (split-with #(< % n) s)]
     (concat (first split-result)
@@ -40,6 +43,8 @@
 ; Problem 3
 
 (defn insertion-sort
+  "Sorts a sequence using the insertion sort algorithm.
+   Repeatedly inserts elements into an initially empty accumulator."
   [s]
   (reduce (fn [accum x] (insert x accum)) () s))
 
@@ -69,6 +74,7 @@
 ;                   result)))))
 
 (defn binary
+  "Converts a decimal number to its binary representation as a list of digits."
   [n]
   (second
     (first
@@ -86,6 +92,7 @@
 ; Problem 6
 
 (defn prime-factors
+  "Returns a list of prime factors of n in ascending order."
   [n]
   (loop [n n
          result []
@@ -106,6 +113,7 @@
 
 ; Problem 10
 (defn pack
+  "Groups consecutive identical elements of a sequence into sublists."
   [s]
   (partition-by identity s))
 

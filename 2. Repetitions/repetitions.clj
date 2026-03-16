@@ -26,16 +26,19 @@
 ;                   (list (first s)))))))
 
 (defn enlist
+  "Wraps each element of a sequence in its own list."
   [s]
   (map list s))
 
 ; Problem 2
 (defn positives
+  "Filters and returns only positive numbers from a sequence."
   [s]
   (filter pos? s))
 
 ; Problem 3
 (defn add-squares
+  "Calculates the sum of squares of all elements in a sequence."
   [s]
   (reduce + (map sqr s)))
 

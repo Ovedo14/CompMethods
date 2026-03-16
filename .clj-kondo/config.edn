@@ -1,1 +1,1 @@
-{:linters {:namespace-name-mismatch {:level :off}}}
+{:linters {:invalid-arity {:level :off} :namespace-name-mismatch {:level :off}}}
