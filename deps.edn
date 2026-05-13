@@ -3,7 +3,9 @@
 "2. Repetitions"
 "3. Higher-Order Functions"
 "4. Parallelism"
-"5. Automata"]
+"5. Automata"
+"6. Regular Expressions"
+"Project"]
  :deps {org.clojure/clojure            {:mvn/version "1.12.4"}
         org.clojure/algo.generic       {:mvn/version "1.0.1"}
         org.clojure/core.logic         {:mvn/version "1.1.1"}

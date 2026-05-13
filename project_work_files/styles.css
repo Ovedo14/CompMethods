@@ -1,0 +1,16 @@
+/*nil :string :comment :reserved :function :variable
+:number :punctuation :spaces :invalid-character*/
+
+.reserved { color: #569cd6; font-weight: bold; } /* Azul */
+.function { color: #dcdcaa; }                    /* Amarillo suave */
+.string   { color: #ce9178; }                    /* Naranja/Verde arcilla */
+.number   { color: #b5cea8; }                    /* Verde menta */
+.comment  { color: #6a9955; font-style: italic;} /* Verde grisáceo oscuro */
+.variable { color: #9cdcfe; }                    /* Azul claro */
+.punctuation { color: #d4d4d4; }                 /* Mismo que el texto base */
+
+.invalid-character {
+    color: white;
+    background-color: red;
+    font-weight: bold;
+}
