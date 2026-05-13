@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lexical Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Original Input</h1>
+    <pre>b=7
+
+a = 32.4 *(-8.6 - b)/       6.1E-8
+
+d = a ^ b // This is a comment
+
+aaa
+</pre>
+    <h1>Lexical Analysis</h1>
+    <table>
+      <tr>
+        <th>Token</th>
+        <th>Category</th>
+      </tr>
+      <tr>
+                    <td class="variable">b</td>
+                    <td>variable</td>
+                  </tr><tr>
+                    <td class="assignment">=</td>
+                    <td>assignment</td>
+                  </tr><tr>
+                    <td class="integer">7</td>
+                    <td>integer</td>
+                  </tr><tr>
+                    <td class="variable">a</td>
+                    <td>variable</td>
+                  </tr><tr>
+                    <td class="assignment">=</td>
+                    <td>assignment</td>
+                  </tr><tr>
+                    <td class="float">32.4</td>
+                    <td>float</td>
+                  </tr><tr>
+                    <td class="multiplication">*</td>
+                    <td>multiplication</td>
+                  </tr><tr>
+                    <td class="opening-parenthesis">(</td>
+                    <td>opening-parenthesis</td>
+                  </tr><tr>
+                    <td class="float">-8.6</td>
+                    <td>float</td>
+                  </tr><tr>
+                    <td class="subtraction">-</td>
+                    <td>subtraction</td>
+                  </tr><tr>
+                    <td class="variable">b</td>
+                    <td>variable</td>
+                  </tr><tr>
+                    <td class="closing-parenthesis">)</td>
+                    <td>closing-parenthesis</td>
+                  </tr><tr>
+                    <td class="division">/</td>
+                    <td>division</td>
+                  </tr><tr>
+                    <td class="float">6.1E-8</td>
+                    <td>float</td>
+                  </tr><tr>
+                    <td class="variable">d</td>
+                    <td>variable</td>
+                  </tr><tr>
+                    <td class="assignment">=</td>
+                    <td>assignment</td>
+                  </tr><tr>
+                    <td class="variable">a</td>
+                    <td>variable</td>
+                  </tr><tr>
+                    <td class="power">^</td>
+                    <td>power</td>
+                  </tr><tr>
+                    <td class="variable">b</td>
+                    <td>variable</td>
+                  </tr><tr>
+                    <td class="comment">// This is a comment</td>
+                    <td>comment</td>
+                  </tr><tr>
+                    <td class="variable">aaa</td>
+                    <td>variable</td>
+                  </tr>
+    </table>
+  </body>
+</html>
